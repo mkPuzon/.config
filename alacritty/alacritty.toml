@@ -14,7 +14,7 @@ x = 8
 y = 8 
 
 [terminal.shell]
-program="/usr/bin/zsh"
+program="zsh"
 
 [font]
 size = 12.0

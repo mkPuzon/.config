@@ -1,10 +1,10 @@
 # Better ls
 alias ls='eza --icons'
 
-# Detailed listing 
-alias ll='eza -lh --icons --git'
-
 # Detailed listing includes hidden files
+alias ll='eza -lah --icons --git'
+
+# List all without hidden files
 alias la='eza -lah --icons --git'
 
 # Tree view

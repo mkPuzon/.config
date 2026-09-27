@@ -10,6 +10,10 @@
 #   CLI tools:    eza, bat, nvim, ripgrep
 #   Node:         nvm
 
+# Find brew if on macOS
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
 # =========================================================
 # History
 # =========================================================
@@ -76,4 +80,7 @@ source "$ZDOTDIR/prompt.zsh"
 # fi
 
 # opencode
-export PATH=/home/cade/.opencode/bin:$PATH
+export PATH=~/.opencode/bin:$PATH
+
+# for mac
+eval "$(/opt/homebrew/bin/brew shellenv)"

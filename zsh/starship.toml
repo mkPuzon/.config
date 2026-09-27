@@ -40,7 +40,7 @@ format = ""
 disabled = true
 
 [directory]
-home_symbol = "/home/cade"
+home_symbol = "/home/cadell"
 format            = "[$path](cyan) "
 truncation_length = 4
 

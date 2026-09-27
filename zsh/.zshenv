@@ -1,5 +1,8 @@
 # ~/.config/zsh/.zshenv
 
+# Ensure config is properly located
+export ZDOTDIR="$HOME/.config/zsh"
+
 # ---------- XDG base directories ----------
 # Centralizes config/cache/data locations
 export XDG_CONFIG_HOME="$HOME/.config"
