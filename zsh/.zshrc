@@ -11,8 +11,13 @@
 #   Node:         nvm
 
 # Find brew if on macOS
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  if [[ -x /opt/homebrew/bin/brew ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  elif [[ -x /usr/local/bin/brew ]]; then
+    eval "$(/usr/local/bin/brew shellenv)"
+  fi
+fi
 
 # =========================================================
 # History
@@ -81,6 +86,3 @@ source "$ZDOTDIR/prompt.zsh"
 
 # opencode
 export PATH=~/.opencode/bin:$PATH
-
-# for mac
-eval "$(/opt/homebrew/bin/brew shellenv)"
