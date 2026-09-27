@@ -2,8 +2,16 @@
 import = ["~/.config/alacritty/themes/catppuccin-mocha.toml"]
 live_config_reload = true
 
+[env]
+TERM = "xterm-256color"
+
 [window]
 decorations = "None"
+option_as_alt= "Both"
+
+[window.padding]
+x = 8 
+y = 8 
 
 [terminal.shell]
 program="/usr/bin/zsh"
@@ -27,12 +35,9 @@ style = "Italic"
 family = "JetBrainsMono Nerd Font"
 style = "Bold Italic"
 
-[window.padding]
-x = 8 
-y = 8 
 
 [keyboard]
 bindings = [
    { key = "c", mods = "Control", action = "Copy" },
-   { key = "v", mods = "Control", action = "Paste" }
+   { key = "v", mods = "Control", action = "Paste" },
 ]

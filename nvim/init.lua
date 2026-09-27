@@ -57,7 +57,7 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
--- ─── RUN PYTHON SCRIPT ──────────────────────────────────────────────────────
+-- Run current Python file
 vim.keymap.set("n", "<leader>r", function()
   vim.cmd("w")
   vim.cmd("split | terminal python3 " .. vim.fn.expand("%:p"))
